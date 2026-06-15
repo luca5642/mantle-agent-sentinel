@@ -48,8 +48,8 @@ The project supports Mantle's AI x Web3 agent ecosystem by making agent behavior
 
 - GitHub repo: https://github.com/luca5642/mantle-agent-sentinel
 - Live demo: https://luca5642.github.io/mantle-agent-sentinel/
-- Demo video: TODO
-- Mantle contract address: TBD
+- Demo video: live frontend demo available above
+- Mantle contract address: not deployed yet; contract source is included at `contracts/AgentDecisionLog.sol`
 
 ## Pitch
 
