@@ -40,7 +40,7 @@ The project supports Mantle's AI x Web3 agent ecosystem by making agent behavior
 1. Open the frontend demo.
 2. Describe an AI agent action.
 3. Select safety controls.
-4. Click “Run agent audit”.
+4. Click "Run agent audit".
 5. Copy the generated Mantle logging payload.
 6. After deployment, store evidence off-chain and call `recordDecision` on Mantle.
 
