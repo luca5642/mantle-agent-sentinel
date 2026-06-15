@@ -4,6 +4,8 @@ Mantle Agent Sentinel is a small AI DevTool demo for The Turing Test Hackathon 2
 
 It reviews an AI agent's proposed on-chain action, scores the safety of that action, and creates a Mantle-ready decision proof payload. The included Solidity contract records the agent's decision hash, proof hash, score, recommendation, and evidence URI as an on-chain event.
 
+Live demo: https://luca5642.github.io/mantle-agent-sentinel/
+
 ## Track
 
 Primary track: AI DevTools

@@ -46,8 +46,8 @@ The project supports Mantle's AI x Web3 agent ecosystem by making agent behavior
 
 ## Links
 
-- GitHub repo: TODO
-- Live demo: TODO
+- GitHub repo: https://github.com/luca5642/mantle-agent-sentinel
+- Live demo: https://luca5642.github.io/mantle-agent-sentinel/
 - Demo video: TODO
 - Mantle contract address: TBD
 
