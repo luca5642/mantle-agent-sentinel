@@ -2,7 +2,7 @@
 
 1. Create a GitHub repo named `mantle-agent-sentinel`.
 2. Upload everything in this folder.
-3. Enable GitHub Pages for the repo, or upload the folder to any static host.
+3. Enable GitHub Pages from Settings -> Pages -> Deploy from a branch -> main / root.
 4. Record a 2 minute screen video using `video-script-ja.md`.
 5. Paste `submission-en.md` into DoraHacks.
 6. Use `AI DevTools` as the primary track.
