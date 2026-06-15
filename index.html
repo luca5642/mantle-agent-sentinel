@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mantle Agent Sentinel</title>
+    <meta
+      name="description"
+      content="AI DevTool demo for Mantle: score an on-chain action, create an agent decision proof, and prepare a Mantle logging payload."
+    >
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar" aria-label="Project header">
+        <div>
+          <p class="eyebrow">Mantle AI DevTool</p>
+          <h1>Mantle Agent Sentinel</h1>
+        </div>
+        <div class="status-strip" aria-label="Demo status">
+          <span>AI audit</span>
+          <span>Mantle-ready</span>
+          <span>Open source</span>
+        </div>
+      </header>
+
+      <section class="hero" aria-label="Agent workspace">
+        <div class="workspace">
+          <aside class="panel input-panel" aria-label="Action input">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">Step 1</p>
+                <h2>Describe an on-chain action</h2>
+              </div>
+              <button class="icon-button" id="sampleButton" type="button" aria-label="Load sample action" title="Load sample action">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM15 13h5v5h-5z"></path>
+                </svg>
+              </button>
+            </div>
+
+            <label for="track">Hackathon track</label>
+            <select id="track">
+              <option>AI DevTools</option>
+              <option>AI Trading & Strategy</option>
+              <option>AI Alpha & Data</option>
+              <option>AI x RWA</option>
+              <option>Consumer & Viral DApps</option>
+              <option>Agentic Wallets & Economy</option>
+            </select>
+
+            <label for="actionText">Action request</label>
+            <textarea id="actionText" spellcheck="true">User wants an AI agent to rebalance a small Mantle DeFi position into mETH, cap slippage at 0.5%, avoid unverified contracts, and write a public execution note.</textarea>
+
+            <div class="grid-2">
+              <div>
+                <label for="value">Value at risk</label>
+                <input id="value" type="number" min="0" value="1200">
+              </div>
+              <div>
+                <label for="confidence">Agent confidence</label>
+                <input id="confidence" type="number" min="1" max="100" value="82">
+              </div>
+            </div>
+
+            <fieldset class="checks" aria-label="Safety settings">
+              <label><input id="simulated" type="checkbox" checked> Dry-run first</label>
+              <label><input id="verified" type="checkbox" checked> Verified contracts only</label>
+              <label><input id="humanReview" type="checkbox"> Human review required</label>
+            </fieldset>
+
+            <button class="primary" id="analyzeButton" type="button">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3l2.1 5.2L20 9l-4.4 3.8 1.3 5.7L12 15.5 7.1 18.5l1.3-5.7L4 9l5.9-.8z"></path>
+              </svg>
+              Run agent audit
+            </button>
+          </aside>
+
+          <section class="panel result-panel" aria-label="Agent result">
+            <div class="panel-head">
+              <div>
+                <p class="eyebrow">Step 2</p>
+                <h2>Agent decision proof</h2>
+              </div>
+              <div class="score-dial" id="scoreDial" aria-label="Safety score">--</div>
+            </div>
+
+            <div class="result-grid">
+              <article class="metric">
+                <span>Recommendation</span>
+                <strong id="recommendation">Run the audit</strong>
+              </article>
+              <article class="metric">
+                <span>Estimated gas</span>
+                <strong id="gas">--</strong>
+              </article>
+              <article class="metric">
+                <span>Proof hash</span>
+                <strong id="hash">--</strong>
+              </article>
+            </div>
+
+            <div class="callout" id="summary">
+              The agent will check contract verification, slippage, value-at-risk, and whether the action should be forced through a dry-run before execution.
+            </div>
+
+            <div class="timeline" id="timeline" aria-label="Audit evidence">
+              <div><span></span><p>Waiting for input.</p></div>
+            </div>
+
+            <div class="payload-box">
+              <div class="payload-head">
+                <p class="eyebrow">Mantle logging payload</p>
+                <button class="ghost" id="copyButton" type="button">Copy JSON</button>
+              </div>
+              <pre id="payload">{}</pre>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="band" aria-label="Project details">
+        <div>
+          <p class="eyebrow">Why it fits</p>
+          <h2>Transparent AI decisions for Mantle agents</h2>
+        </div>
+        <div class="detail-grid">
+          <article>
+            <h3>AI x on-chain</h3>
+            <p>The demo turns an AI agent decision into a verifiable JSON payload and Solidity event for Mantle.</p>
+          </article>
+          <article>
+            <h3>DevTool focus</h3>
+            <p>Builders can use it before execution to catch risky calls, unverified contracts, and missing dry-runs.</p>
+          </article>
+          <article>
+            <h3>Submission-ready</h3>
+            <p>Includes a static runnable frontend, a minimal Mantle contract, README, and pitch copy.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
